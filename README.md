@@ -1,5 +1,7 @@
 # tps.rbdc
 
+R package to select and import one of eight Toronto Police Service [Race and Identity-based Data - Open Datasets](https://data.torontopolice.on.ca/pages/rbdc-open-data)
+
 ## Install
 
 ```r
