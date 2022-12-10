@@ -10,10 +10,8 @@ devtools::install_github("alexlusco/tps.rbdc")
 ## Example
 
 ```
-library(tps.rbdc)
-
-strip_search_data <- import_data()
-
+>library(tps.rbdc)
+>strip_search_data <- import_data()
 Select a dataset to import: 
 
 1: Arrests & Strip Searches
