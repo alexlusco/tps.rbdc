@@ -2,14 +2,14 @@
 
 ## Install
 
-```
+```{r}
 install.packages("devtools") 
 devtools::install_github("alexlusco/tps.rbdc")
 ```
 
 ## Example
 
-```
+```{r}
 >library(tps.rbdc)
 >strip_search_data <- import_data()
 Select a dataset to import: 
