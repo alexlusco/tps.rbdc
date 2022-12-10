@@ -1,6 +1,6 @@
 # tps.rbdc
 
-R package to select and import one of eight Toronto Police Service [Race and Identity-based Data - Open Datasets](https://data.torontopolice.on.ca/pages/rbdc-open-data) directly from API rather than downloading from browser. Cleans up variable names and corrects for variable misclassifications in TPS's Public Safety Data Portal.
+R package to select and import one of eight Toronto Police Service [Race and Identity-based Data - Open Datasets](https://data.torontopolice.on.ca/pages/rbdc-open-data) directly from R rather than downloading from browser. Cleans up variable names as well using `library(janitor)`.
 
 ## Install
 
@@ -14,6 +14,8 @@ devtools::install_github("alexlusco/tps.rbdc")
 ```r
 >library(tps.rbdc)
 >strip_search_data <- import_data()
+```
+```
 Select a dataset to import: 
 
 1: Arrests & Strip Searches
@@ -24,9 +26,14 @@ Select a dataset to import:
 6: Use of Force: Occurrence Category
 7: Use of Force: Gender Composition
 8: Use of Force Types and Perceived Weapons
+```
 
+```r
 Selection: 1
 > strip_search_data
+```
+
+```
 # A tibble: 65,276 × 25
    arrest_year arrest_month event_id arrest_id person_id perceived_race    sex   age_group_at_arrest
          <int> <chr>           <int>     <int>     <int> <chr>             <chr> <chr>              
