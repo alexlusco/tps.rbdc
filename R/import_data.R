@@ -92,6 +92,8 @@ import_data <- function() {
   # clean variable names
   df <- janitor::clean_names(df)
 
+  return(df)
+
 }
 
 
