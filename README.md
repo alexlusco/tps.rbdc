@@ -1,10 +1,13 @@
 # tps.rbdc
 
-R package to select and import one of eight Toronto Police Service [Race and Identity-based Data - Open Datasets](https://data.torontopolice.on.ca/pages/rbdc-open-data) directly from R rather than downloading from browser. Imports in tidy format. Cleans up variable names as well.
+R package to select and import one of eight Toronto Police Service [Race and Identity-based Data - Open Datasets](https://data.torontopolice.on.ca/pages/rbdc-open-data) directly from API rather manually than downloading from browser. Imports in tidy format. Cleans up variable names as well.
 
 ## Install
 
 ```r
+# Note that this package depends on three others -- rio, tibble, janitor -- that you may need install first.
+# You can do this directly by passing e.g., install.packages("rio") or adding a dependencies = TRUE argument
+# to install_github()
 install.packages("devtools") 
 devtools::install_github("alexlusco/tps.rbdc")
 ```
