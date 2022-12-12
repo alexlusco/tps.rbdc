@@ -4,12 +4,20 @@ R package to select and import one of eight Toronto Police Service [Race and Ide
 
 ## Install
 
+Note that this package depends on three others -- `rio`, `tibble`, `janitor` -- that you may need install first. You can do this directly by passing e.g., `install.packages("rio")` or adding a `dependencies = TRUE` argument to `install_github()` as shown in the second option below.
+
+Option 1: 
+
 ```r
-# Note that this package depends on three others -- rio, tibble, janitor -- that you may need install first.
-# You can do this directly by passing e.g., install.packages("rio") or adding a dependencies = TRUE argument
-# to install_github()
 install.packages("devtools") 
 devtools::install_github("alexlusco/tps.rbdc")
+```
+
+Option 2:
+
+```r
+install.packages("devtools") 
+devtools::install_github("alexlusco/tps.rbdc", dependencies = TRUE)
 ```
 
 ## Example
